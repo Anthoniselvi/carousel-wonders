@@ -1,0 +1,73 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 600px;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+
+.container .wonders-list,
+.container .wonders-list-hidden {
+    display: none;
+}
+
+.container .wonders-list-visible{
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+.container .wonders-list img {
+    width: 100%;
+    max-width: 600px;
+    max-height: 350px;
+}
+
+.container .wonders-views {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container .wonders-views button {
+    border-radius: 50px;
+    background-color: red;
+    color: yellow;
+    border: 0;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.container .wonders-views button#prev-button{
+    margin-left: 20px;
+}
+
+.container .wonders-views button#next-button{
+    margin-right: 20px;
+}
+
+@keyframes fadeVisibility{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
